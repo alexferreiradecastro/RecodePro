@@ -66,8 +66,8 @@
             </br>
             <p class=<?php echo $rows["descricao"]; ?>>Refrigerador Frost Free Brastemp Side Inverse Inox 540 Litros</p>
             <hr>
-            <p class="descricao"><strike><?php echo $rows["preco"]; ?></strike></p>
-            <p class="preco"><?php echo $rows["precovenda"]; ?></p>
+            <p class="descricao"><strike>R$ <?php echo $rows["preco"]; ?></strike></p>
+            <p class="preco">R$ <?php echo $rows["precovenda"]; ?></p>
         </div>        
 
     <?php            
