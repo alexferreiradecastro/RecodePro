@@ -5,22 +5,12 @@
     color: red;    
 }
 
-.menu {   
-    background-color: rgb(218, 45, 54);
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;    
-    margin: 0 18% 0% 0;
-    font-size: 16px;
-}
-
 .categorias {
     width: 18%;
     height: 1000px;
     display: block;    
     float: left;
+    
 }
 
 .produtos {
@@ -54,9 +44,6 @@
 }
 
 
-#contato {    
-    text-align: center;
-}
 
 #form {
     padding: 0 0 0 35%;    
@@ -69,3 +56,7 @@
 #botao {
     margin: 0 0 0 20%;
 }
+.cor-header {
+    color: #fff;
+    }
+
