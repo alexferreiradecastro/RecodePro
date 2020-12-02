@@ -52,24 +52,25 @@ if (!$conn) {
     <!-- Fim das categorias -->
 
     <?php
+    setlocale(LC_MONETARY, 'pt_BR');
 
     $sql = "select * from produtos";
     $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
-        while ($rows = $result->fetch_assoc()) {
+    if ($result->num_row > 0) {
+        while ($row = $result->fetch_assoc()) {
 
     ?>
 
 
-            <div class="box_produto" id="<?php echo $rows["categoria"]; ?>">
-                <img src="<?php echo $rows["imagem"]; ?>" width="110" onmouseout="foraimg(this)" onmouseover="dentroimg(this)">
-                </br>
-                <p class=<?php echo $rows["descricao"]; ?>>Refrigerador Frost Free Brastemp Side Inverse Inox 540 Litros</p>
-                <hr>
-                <p class="descricao"><strike>R$ <?php echo $rows["preco"]; ?></strike></p>
-                <p class="preco"> R$ <?php echo $rows["precovenda"]; ?></p>
-            </div>
+        <div class="box_produto" id="<?php echo $row["categoria"]; ?>">
+            <img src="<?php echo $row["imagem"]; ?>" width="110" onmouseout="foraimg(this)"onmouseover="dentroimg(this)">
+            </br>
+            <div class="descricao"><?php echo $row["descricao"]; ?></div>
+            <hr>
+            <div class="descricao"><strike>R$ <?php echo number_format($row["preco"], 2,",","."); ?></strike></div>
+            <div class="preco">R$ <?php echo number_format($row["precovenda"], 2,",","."); ?></div>
+        </div>    
 
     <?php
         }
