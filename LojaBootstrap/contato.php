@@ -69,7 +69,7 @@ if (isset($_POST['nome']) && isset($_POST['msg'])) {
         $sql = "select * from comentarios";
         $result = $conn->query($sql);
 
-        if ($result->num_row > 0) {
+        if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 echo "Data: ", $row['data'], "<br/>";
                 echo "Nome: ", $row['nome'], "<br/>";
