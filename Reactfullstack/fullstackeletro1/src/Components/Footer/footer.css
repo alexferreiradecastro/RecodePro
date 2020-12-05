@@ -1,0 +1,9 @@
+#rodape {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#formas_pagamento {
+    color: red;    
+}
