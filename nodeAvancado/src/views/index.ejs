@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        .conteudo img {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #eefdec;">
+    <div class="container mt-5 ">
+        <div class="card bg-success text-white">
+            <div class="card-header ">
+                <h3>Saiba qual é a cidade pelo CEP</h3>
+            </div>
+
+            <div class="card-body ">
+                <form action="/envia-cep" method="POST">
+                    <div class="form-group">
+                        <label for="cep">CEP</label>
+                        <input placeholder="Digite o número do CEP" class="form-control mt-1" type="text" name="cep"
+                            id="cep">
+                        <input type="submit" class="btn btn-light mt-2" value="Buscar">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class="card bg-primary text-white mt-5">
+            <div class="card-header ">
+                <h3>Encontre o bairro pelo cep</h3>
+            </div>
+
+            <div class="/envia-bairro">
+                <form action="/envia-cep" method="POST">
+                    <div class="form-group">
+                        <label for="cep">Nome da cidade</label>
+                        <input placeholder="Digite o número do CEP" class="form-control mt-1" type="text" name="cep"
+                            id="cep">
+                        <input type="submit" class="btn btn-light mt-2" value="Buscar">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
